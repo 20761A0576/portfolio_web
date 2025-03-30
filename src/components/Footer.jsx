@@ -1,5 +1,20 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
+import { 
+  FaGithub, 
+  FaLinkedin, 
+  FaTwitter, 
+  FaEnvelope, 
+  FaPhone, 
+  FaMapMarkerAlt,
+  FaHome,
+  FaUser,
+  FaCode,
+  FaAddressCard,
+  FaLaptopCode,
+  FaMobileAlt,
+  FaPalette,
+  FaHandshake
+} from 'react-icons/fa';
 import './Footer.css';
 
 const Footer = () => {
@@ -8,73 +23,104 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-grid">
           {/* About Section */}
-          <div className="footer-section" style={{ '--section-index': 1 }}>
-            <h3 className="footer-title">About Me</h3>
-            <p className="footer-description">
-              I'm a passionate full-stack developer with expertise in creating modern web applications.
-              I love turning complex problems into simple, beautiful, and intuitive solutions.
+          <div className="footer-about">
+            <h3>About Me</h3>
+            <p>
+              I am a passionate Full Stack Developer with expertise in creating modern web applications.
+              I specialize in building responsive, user-friendly websites using cutting-edge technologies.
             </p>
-            <div className="social-links">
-              <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="social-link">
-                <i><FaGithub /></i>
+            <div className="footer-social">
+              <a href="https://github.com/20761A0576" target="_blank" rel="noopener noreferrer" className="social-link">
+                <FaGithub />
               </a>
-              <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="social-link">
-                <i><FaLinkedin /></i>
+              <a href="https://linkedin.com/in/dandaramireddy" target="_blank" rel="noopener noreferrer" className="social-link">
+                <FaLinkedin />
               </a>
-              <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" className="social-link">
-                <i><FaTwitter /></i>
+              <a href="https://twitter.com/DandaRam4570" target="_blank" rel="noopener noreferrer" className="social-link">
+                <FaTwitter />
               </a>
             </div>
           </div>
 
           {/* Quick Links Section */}
-          <div className="footer-section" style={{ '--section-index': 2 }}>
-            <h3 className="footer-title">Quick Links</h3>
-            <div className="footer-links">
-              <a href="#home" className="footer-link">Home</a>
-              <a href="#about" className="footer-link">About</a>
-              <a href="#projects" className="footer-link">Projects</a>
-              <a href="#skills" className="footer-link">Skills</a>
-              <a href="#contact" className="footer-link">Contact</a>
-            </div>
+          <div className="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li>
+                <a href="#home">
+                  <FaHome /> Home
+                </a>
+              </li>
+              <li>
+                <a href="#about">
+                  <FaUser /> About
+                </a>
+              </li>
+              <li>
+                <a href="#projects">
+                  <FaCode /> Projects
+                </a>
+              </li>
+              <li>
+                <a href="#contact">
+                  <FaAddressCard /> Contact
+                </a>
+              </li>
+            </ul>
           </div>
 
           {/* Services Section */}
-          <div className="footer-section" style={{ '--section-index': 3 }}>
-            <h3 className="footer-title">Services</h3>
-            <div className="footer-links">
-              <a href="#web-development" className="footer-link">Web Development</a>
-              <a href="#mobile-development" className="footer-link">Mobile Development</a>
-              <a href="#ui-design" className="footer-link">UI/UX Design</a>
-              <a href="#consulting" className="footer-link">Consulting</a>
-            </div>
+          <div className="footer-services">
+            <h3>Services</h3>
+            <ul>
+              <li>
+                <a href="#web-development">
+                  <FaLaptopCode /> Web Development
+                </a>
+              </li>
+              <li>
+                <a href="#mobile-apps">
+                  <FaMobileAlt /> Mobile Apps
+                </a>
+              </li>
+              <li>
+                <a href="#ui-design">
+                  <FaPalette /> UI/UX Design
+                </a>
+              </li>
+              <li>
+                <a href="#consulting">
+                  <FaHandshake /> Consulting
+                </a>
+              </li>
+            </ul>
           </div>
 
           {/* Contact Section */}
-          <div className="footer-section" style={{ '--section-index': 4 }}>
-            <h3 className="footer-title">Contact</h3>
-            <div className="footer-links">
-              <a href="mailto:your.email@example.com" className="footer-link">
-                <FaEnvelope /> your.email@example.com
-              </a>
-              <a href="tel:+1234567890" className="footer-link">
-                <FaPhone /> +1 (234) 567-890
-              </a>
-              <a href="#" className="footer-link">
-                <FaMapMarkerAlt /> Your Location
-              </a>
-            </div>
+          <div className="footer-contact">
+            <h3>Contact Info</h3>
+            <ul>
+              <li>
+                <FaEnvelope />
+                <p>sairamdanda123@gmail.com</p>
+              </li>
+              <li>
+                <FaPhone />
+                <p>+91 9392873662</p>
+              </li>
+              <li>
+                <FaMapMarkerAlt />
+                <p>Markapur, India</p>
+              </li>
+            </ul>
           </div>
         </div>
 
         {/* Footer Bottom */}
         <div className="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} Your Name. All rights reserved.</p>
-          <div className="footer-bottom-links">
-            <a href="/privacy" className="footer-bottom-link">Privacy Policy</a>
-            <a href="/terms" className="footer-bottom-link">Terms of Service</a>
-            <a href="/sitemap" className="footer-bottom-link">Sitemap</a>
-          </div>
+          <p>
+            © {new Date().getFullYear()} Your Name. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
